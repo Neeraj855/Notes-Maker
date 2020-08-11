@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav class="nav" id="myNav">
+    <a href="#" class="active uLine">MagicNotes</a>
+    <a href="#">Home</a>
+    <form>
+      <input id='searchTxt' class="form navform " type="search" placeholder="Search" aria-label="Search" />
+    </form>
+   
+
+    </a>
+
+
+  </nav>
+
+
+
+  <div class="container">
+    <h1>Welcome to Magic Notes</h1>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Add a Note</h5>
+        <div class="form-group">
+          <textarea class="form" id="addTxt"></textarea>
+        </div>
+        <button class="btn" id="addBtn">Add Note</button>
+      </div>
+    </div>
+    <hr />
+    <h1>Your Notes</h1>
+    <hr />
+    <div id="notes">
+
+    </div>
+  </div>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
