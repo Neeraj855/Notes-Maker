@@ -1,9 +1,6 @@
 showNotes();
 
-
-
 //NavBar
-
 function myFuction() {
     var nav = document.getElementById('myNav');
     if (nav.className === 'nav') {
@@ -41,11 +38,11 @@ function showNotes() {
     let html = "";
     notesObj.forEach(function (element, index) {
         html += `
-            <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Note ${index + 1}</h5>
+            <div class="noteCard" style="width: 18rem;">
+                    <div class="card-body card-bg">
+                        <h5 class="card2-title">Note ${index + 1}</h5>
                         <p class="card-text"> ${element}</p>
-                        <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
+                        <button id="${index}" onclick="deleteNote(this.id)" class="btn-2">Delete Note</button>
                     </div>
                 </div>`;
     });
@@ -59,7 +56,6 @@ function showNotes() {
 
 
 //Function to delete a Note
-
 function deleteNote(index) {
 
 
